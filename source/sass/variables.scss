@@ -1,0 +1,47 @@
+// Colors
+//---------------------------------
+
+// Default
+
+$color-default-black:             #000000;
+$color-default-white:             #ffffff;
+$color-transparent:               rgba(255, 255, 255, 0);
+
+// Page-colors
+
+$color-cab-sav:                    #533738;
+$color-oriental-pink:              #cc8b86;
+$color-wisp-pink:                  #efe6e4;
+$color-dusts-storm:                #e2c4ba;
+$color-bazaar:                     #8d7370;
+$color-congo-brown:                #644845;
+
+// Gradient
+
+// Typography
+//---------------------------------
+
+$font-family--montserrat:           "Montserrat", "Arial", sans-serif;
+$medium:                            500;
+$regular:                           400;
+
+
+// Animation
+//---------------------------------
+
+$default-transition-settings:       0.3s ease;
+$modal-transition-settings:         0.6s cubic-bezier(0.55, 0, 0.1, 1);
+
+// Viewports
+//---------------------------------
+
+$viewport--sm:                      320px;
+$viewport--md:                      768px;
+$viewport--lg:                      1024px;
+$viewport--xl:                      1400px;
+
+// Retina
+//---------------------------------
+
+$retina-dpi:                        144dpi;
+$retina-dppx:                       1.5dppx;

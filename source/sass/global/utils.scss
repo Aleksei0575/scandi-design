@@ -1,0 +1,112 @@
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+
+  clip: rect(0 0 0 0);
+}
+
+.wrapper {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
+
+  // используйте для страниц с min-height: 100vh для визуального скрытия скроллбара
+  &--no-scrollbar {
+    height: 100vh;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .header,
+  .footer {
+    flex-shrink: 0;
+  }
+
+  main {
+    flex-grow: 1;
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+.scroll-lock {
+  position: fixed;
+
+  overflow-y: auto;
+}
+
+.btn--reset,
+.button-reset {
+  padding: 0;
+
+  background: $color-transparent;
+  border: none;
+  cursor: pointer;
+
+  transition: all $default-transition-settings;
+
+  &:hover {
+    transition: all $default-transition-settings;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.new-design section {
+  padding-top: 84px;
+  padding-bottom: 20px;
+
+  @include viewport--lg {
+    padding-top: 76px;
+    padding-bottom: 20px;
+  }
+
+  @include viewport--md {
+    padding-top: 60px;
+    padding-bottom: 20px;
+  }
+
+  @include viewport--sm {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+}
+
+.centered {
+  align-self: flex-start;
+  margin: 0 auto;
+}
