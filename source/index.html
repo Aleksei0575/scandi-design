@@ -1,35 +1,279 @@
 <!DOCTYPE html>
 <html lang="ru">
-<include src="source/components/head.html"></include>
-<body>
-  <div style="display: none;">
-    <include src="build/img/sprite.svg"></include>
-  </div>
-<main>
-  <header class="header">
-    
-  </header>
-  <section class="promo">
-    <h1 class="promo__title">Promo__title</h1>
-  </section>
-  <section class="">
-    
-  </section>
-  <section class="">
-    
-  </section>
-  <section class="">
-    
-  </section>
-  <section class="">
-   
-  </section>
-  <section class="">
+  <include src="source/components/head.html"></include>
+  <body>
+    <div style="display: none;">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+    <header class="header">
+      <div class="header__wrapper container">
+        <div class="header__logo">
+          <a class="header__logo-link">
+            <img src="img/logo.png" width="26" height="25" alt="Логотип">
+            <span>SCANDI</span>
+          </a>
+        </div>
+        <nav class="header__navigation nav">
+          <ul class="header__navigation-list nav__list">
+            <li class="header__navigation-item nav__item nav__item-company">
+              <a class="header__navigation-link nav__link-company" href="#">О компании</a>
+            </li>
+            <li class="header__navigation-item nav__item nav__item-portfolio">
+              <a class="header__navigation-link nav__link-portfolio" href="#">Портфолио</a>
+            </li>
+            <li class="header__navigation-item nav__item nav__item-team">
+              <a class="header__navigation-link nav__link-team" href="#">Команда</a>
+            </li>
+            <li class="header__navigation-item nav__item nav__item-work">
+              <a class="header__navigation-link nav__link-work" href="#">Как мы работаем</a>
+            </li>
+            <li class="header__navigation-item nav__item nav__item-reviews">
+              <a class="header__navigation-link nav__link-reviews" href="#">Отзывы клиентов</a>
+            </li>
+            <li class="header__navigation-item nav__item nav__item-application">
+              <a class="header__navigation-link nav__link-application" href="#">Оставить заявку</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__contact">
+          <a class="header__contact-link" href="tel:79818574624" aria-label="Contacts phone">+7 (981) 857-46-24</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="promo container">
+        <div class="promo__info">
+          <h1 class="promo__title">Поможем сделать вашу квартиру уютнее</h1>
+          <p class="promo__text">Подбираем текстиль, мебель и аксессуары
+            под ваш интерьер, находим магазины
+            и&nbsp;помогаем организовать доставку</p>
+          <a class="promo__link-btn" href="#">Оставить заявку</a>
+        </div>
+      </section>
+      <section class="about-us">
+        <h2 class="about-us__title">О нас</h2>
+        <div class="about-us__top-wrapper">
+          <div class="about-us__image-block">
+            <picture>
+<!--              <source media="(max-width: 449px)" srcset="img/content/main/main-bg-320@1x.png 1x, img/content/main/main-bg-320@2x.png 2x"/>-->
+<!--              <source media="(max-width: 767px)" srcset="img/content/main/main-bg-322@1x.png 1x, img/content/main/main-bg-322@2x.png 2x"/>-->
+<!--              <source media="(max-width: 960px)" srcset="img/content/main/main-bg-600@1x.png 1x, img/content/main/main-bg-600@2x.png 2x"/>-->
+<!--              <source media="(max-width: 1024px)" srcset="img/content/main/main-bg-960@1x.png 1x, img/content/main/main-bg-960@2x.png 2x"/>-->
+              <!-- 1x: 445px; 2x: 890px;-->
+              <img class="about-us__img" src="img/about-us-desktop@1x.jpg" srcset="img/about-us-desktop@2x.jpg 2x" width="445" height="465" alt="Красиво засерверованный стол">
+            </picture>
+          </div>
+          <div class="about-us__info-block">
+            <p>Премиальный европейский текстиль — одно из самых главных направлений работы коллектива. Создавать неповторимые интерьеры для наших дорогих клиентов, уделяя внимание мельчайшим деталям — вот то,  что по-настоящему вдохновляет дизайнеров нашей студии.</p>
+            <p>Наш коллектив сделает все, чтобы после сотрудничества с нами,  Вам было приятно сказать: «&nbsp;Да!&nbsp;Это именно то, что действительно достойно моего дома!»</p>
+          </div>
+        </div>
+        <div class="about-us__bottom-wrapper">
+          <ul class="about-us__advantages-list">
+            <li class="about-us__advantages-item">
+              <span>5</span> лет опыта
+            </li>
+            <li class="about-us__advantages-item">
+              <span>100</span> проектов
+            </li>
+            <li class="about-us__advantages-item">
+              <span>10</span> наград
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="our-works container">
+        <h2 class="our-works__title">Наши работы</h2>
+        <ul class="our-works__list">
+          <li class="our-works__item our-works__item--active">
+            <img class="our-works__img" src="img/our-works-1.jpg" width="488" height="451" alt="Интерьер спальни">
+            <div class="our-works__hover-block">
+              <h3>Квартира-студия 30 кв.м.</h3>
+              <p>В квартире были светлые стены и тёплые цвета. Мы сконцентрировались на&nbsp;отсылках&nbsp;к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.</p>
+            </div>
+          </li>
+          <li class="our-works__item">
+            <img class="our-works__img" src="img/our-works-2.jpg" width="692" height="451" alt="Интерьер кухни">
+            <div class="our-works__hover-block">
+              <h3>Квартира-студия 30 кв.м.</h3>
+              <p>В квартире были светлые стены и тёплые цвета. Мы сконцентрировались на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.</p>
+            </div>
+          </li>
+          <li class="our-works__item">
+            <img class="our-works__img" src="img/our-works-3.jpg" width="692" height="451" alt="Интерьер гостинной">
+            <div class="our-works__hover-block">
+              <h3>Квартира-студия 30 кв.м.</h3>
+              <p>В квартире были светлые стены и тёплые цвета. Мы сконцентрировались на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.</p>
+            </div>
+          </li>
+          <li class="our-works__item">
+            <img class="our-works__img" src="img/our-works-4.jpg" width="488" height="451" alt="Интерьер ванной">
+            <div class="our-works__hover-block">
+              <h3>Квартира-студия 30 кв.м.</h3>
+              <p>В квартире были светлые стены и тёплые цвета. Мы сконцентрировались на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.</p>
+            </div>
+          </li>
+        </ul>
+        <a class="our-works__link-gallery" href="#">
+          <span>Смотреть ещё</span>
+          <svg viewBox="0 0 61 16" width="61" height="16">
+            <use xlink:href="#icon-arrow"/>
+          </svg>
+        </a>
+      </section>
+      <section class="team">
+        <div class="team__wrapper">
+          <h2 class="team__title">Команда</h2>
+          <ul class="team__list">
+            <li class="team__item team__item-first">
+              <div class="team__item-img">
+                <picture>
+                  <!-- 1x: 320px; 2x: 640px;-->
+                  <img class="team__designer-img" src="img/team-designer-1@1x.jpg" srcset="img/team-designer-1@2x.jpg 2x" width="320" height="253" alt="Дизайнер интерьера квартир">
+                </picture>
+              </div>
+              <div class="team__item-info">
+                <p>Это Маша, наш главный дизайнер. Она отвечает за дизайн-проект, приезжает к вам домой, общается
+                  и&nbsp;помогает&nbsp;сделать вашу квартиру красивой и уютной.</p>
+              </div>
+            </li>
+            <li class="team__item team__item-second">
+              <div class="team__item-img">
+                <picture>
+                  <!-- 1x: 320px; 2x: 640px;-->
+                  <img class="team__designer-img" src="img/team-designer-2@1x.jpg" srcset="img/team-designer-2@2x.jpg 2x" width="320" height="253" alt="Менеджер-консультант проектов">
+                </picture>
+              </div>
+              <div class="team__item-info">
+                <p>С нашим менеджером Сашей вы познакомитесь в первую очередь. Она проконсультирует вас, соберёт все документы
+                  и&nbsp;ответит на все вопросы.</p>
+              </div>
+            </li>
+            <li class="team__item team__item-third">
+              <div class="team__item-img">
+                <picture>
+                  <!-- 1x: 320px; 2x: 640px;-->
+                  <img class="team__designer-img" src="img/team-designer-3@1x.jpg" srcset="img/team-designer-3@2x.jpg 2x" width="320" height="253" alt="Дизайнер интерьера домов">
+                </picture>
+              </div>
+              <div class="team__item-info">
+                <p>Катя тоже занимается дизайном. Она всегда находит общий язык с клиентами и точно знает, как&nbsp;обсутроить дом так, чтобы вам понравилось.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="how-work container">
+        <h2 class="how-work__title">Как мы работаем</h2>
+        <ul class="how-work__list">
+          <li class="how-work__item">
+            <span>1</span>
+            <p>Знакомимся, выезжаем на&nbsp;объект, утверждаем концепцию, подписывем договор.</p>
+          </li>
+          <li class="how-work__item">
+            <span>2</span>
+            <p>Подбираем мебель, текстиль, аксессуры. Делаем 3D-зуализацию.</p>
+          </li>
+          <li class="how-work__item">
+            <span>3</span>
+            <p>Находим нужные магазины, помогаем с доставкой и&nbsp;оплатой товаров.</p>
+          </li>
+          <li class="how-work__item">
+            <span>4</span>
+            <p>Воплощаем проект в жизнь: расставляем мебель и цветы, вешаем шторы, находим места для мелочей</p>
+          </li>
+        </ul>
+      </section>
+      <section class="reviews">
+        <h2 class="reviews__title">Отзывы</h2>
+        <div class="reviews__wrapper">
+          <div class="reviews__slider swiper-container">
+            <ul class="reviews__list swiper-wrapper">
+              <li class="reviews__item swiper-slide">
+                <div class="reviews__text-block">
+                  <blockquote>
+                    <p>«Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу студию для украшения своего дома.</p>
+                    <p>Работа шла быстро, было очень приятно общаться и взаимодествовайть с&nbsp;сотрудниками. Не ожидала, что это будет так легко!</p>
+                    <p>Буду советовать и своим друзьям к вам обращаться!»</p>
+                    <cite>Анна Беловская</cite>
+                  </blockquote>
+                </div>
+                <div class="reviews__img-block">
+                  <figure class="reviews__img-top">
+                    <a class="reviews__img-link">
+                      <picture>
+                        <!-- 1x: 407px; 2x: 814px;-->
+                        <img class="reviews__image" src="img/reviews-img-1@1x.jpg" srcset="img/reviews-img-1@2x.jpg 2x" width="407" height="272" alt="Гостинная с красиво раставленной мебелью">
+                      </picture>
+                    </a>
+                  </figure>
+                  <figure class="reviews__img-bottom">
+                    <a class="reviews__img-link">
+                      <picture>
+                        <!-- 1x: 407px; 2x: 814px;-->
+                        <img class="reviews__image" src="img/reviews-img-2@1x.jpg" srcset="img/reviews-img-2@2x.jpg 2x" width="407" height="272" alt="Красиво оформленная кухня с обеденным столом">
+                      </picture>
+                    </a>
+                  </figure>
+                </div>
+              </li>
+            </ul>
+            <a class="reviews__btn reviews__btn--prev swiper-button-prev" href="#prev" aria-label="предыдущий">
+              <svg viewBox="0 0 33 16" width="33" height="16">
+                <use xlink:href="#icon-arrow-prev"/>
+              </svg>
+            </a>
+            <a class="reviews__btn reviews__btn--next swiper-button-next" href="#next" aria-label="следующий">
+              <svg viewBox="0 0 33 16" width="33" height="16">
+                <use xlink:href="#icon-arrow-next"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="contacts container">
+        <div class="contacts__wrapper">
+          <div class="contacts__form-block">
+            <h2 class="contacts__title">Оставить заявку</h2>
+            <p class="contacts__info">Оставьте свои контакты. Менеджер перезвонит в&nbsp;удобное вам время и ответит на все вопросы.</p>
+            <div class="contacts__form form">
+              <form action="#" method="post">
+                <div class="form__item form__item-name">
+                  <label class="visually-hidden" for="name">Ваше имя</label>
+                  <input id="name" type="text" name="name" placeholder="Ваше имя" required>
+                </div>
+                <div class="form__item form__item-tel">
+                  <label class="visually-hidden" for="tel">Введите телефон</label>
+                  <input id="tel" type="tel" name="tel" placeholder="Введите телефон" required>
+                </div>
+                <button type="submit">Оставить заявку</button>
+              </form>
+            </div>
+          </div>
+          <div class="contacts__map-block">
+            <picture>
+              <picture>
+                <!-- 1x: 590px; 2x: 1180px;-->
+                <img class="contacts__map-img" src="img/contacts-map@1x.jpg" srcset="img/contacts-map@2x.jpg 2x" width="590" height="624" alt="Карта с адресом">
+              </picture>
+            </picture>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer container">
+      <div class="footer-wrapper">
+        <div class="footer__contact">
+          <a class="footer__contact-link" href="tel:79818574624" aria-label="Contacts phone">+7 (981) 857-46-24</a>
+          <p class="footer__adress">г. Санкт-петербург, ул. Большая Конюшенная, 19</p>
+        </div>
+        <div class="footer__copyright">
+          <p>ИП Королёва А.А.</p>
+        </div>
+      </div>
+    </footer>
 
-  </section>
-</main>
-
-<!--<script src="js/vendor.js"></script>-->
-<!--<script src="js/main.js"></script>-->
-</body>
+<!--    <script src="js/vendor.js"></script>-->
+<!--    <script src="js/main.js"></script>-->
+  </body>
 </html>

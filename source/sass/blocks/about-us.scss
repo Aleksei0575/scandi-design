@@ -1,0 +1,65 @@
+.about-us {
+  padding-top: 65px;
+}
+
+.about-us__title {
+  margin-bottom: 40px;
+  @include font (40, 50);
+  font-weight: 400;
+  color: $color-cab-sav;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.about-us__top-wrapper {
+  padding: 0 182px;
+  margin-bottom: 21px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-us__image-block {
+  width: 43%;
+}
+
+.about-us__info-block {
+  width: 50.9%;
+
+  p:first-child {
+    margin: 0 0 30px;
+
+  }
+
+  p:last-child  {
+    margin: 0;
+  }
+}
+
+.about-us__bottom-wrapper {
+  background-color: $color-bazaar;
+}
+
+.about-us__advantages-list{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 182px;
+}
+
+.about-us__advantages-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 85px;
+  padding-bottom: 81px;
+
+  @include font(30, 36);
+  font-weight: 500;
+  color: $color-default-white;
+  text-transform: uppercase;
+
+  span {
+    padding-bottom: 9px;
+    @include font(50, 62);
+    font-weight: 400;
+  }
+}
