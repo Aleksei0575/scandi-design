@@ -80,9 +80,10 @@
 
   &:hover {
     @include hover;
+    color: #ae127b;
 
     svg {
-      fill: #e0fee8;
+      fill: #ae127b;
     }
   }
 }
