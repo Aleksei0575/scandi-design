@@ -1,0 +1,67 @@
+.header {
+  padding-top: 36px;
+  padding-bottom: 36px;
+  font-size: 16px;
+  line-height: 20px;
+  align-self: center;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  width: 8.5%;
+  margin-right: 5.7%;
+}
+
+.header__logo-link {
+  display: flex;
+  align-items: center;
+  color: $color-cab-sav;
+}
+
+.header__navigation {
+  width: 70.5%;
+}
+
+.header__navigation-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__navigation-item {
+  @include not-hover;
+
+  &:hover a,
+  &:focus a {
+    @include hover;
+    color: #ae127b;
+    text-decoration: underline;
+  }
+}
+
+.header__navigation-link {
+  padding: 20px 0;
+  color: $color-cab-sav;
+}
+
+.header__contact {
+  width: 12%;
+  margin-left: auto;
+  @include not-hover;
+
+  &:hover a,
+  &:focus a {
+    @include hover;
+    color: #ae127b;
+    text-decoration: underline;
+  }
+}
+
+.header__contact-link{
+  padding: 20px 0;
+  color: $color-cab-sav;
+}

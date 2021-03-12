@@ -1,0 +1,55 @@
+.promo {
+  padding-top: 150px;
+  padding-bottom: 20px;
+  min-height: 715px;
+  margin-top: -97px;
+
+  background-image: url("../img/promo-bg@1x.jpg");
+  background-size: 1400px 715px;
+  //background-position: right top -345px;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/promo-bg@2x.jpg");
+  }
+}
+
+.promo__info {
+  padding-left: 84px;
+  padding-top: 2px;
+}
+
+.promo__title {
+  width: 534px;
+  margin-bottom: 20px;
+  @include font (50, 62);
+  font-weight: 400;
+  color: $color-cab-sav;
+}
+
+.promo__text {
+  width: 444px;
+  margin: 0;
+  margin-bottom: 25px;
+  color: $color-cab-sav;
+ }
+
+.promo__link-btn {
+  display: inline-block;
+  padding: 25px 68px;
+
+  background-color: $color-oriental-pink;
+  //border-radius: 21px;
+  //border: none;
+  color: $color-cab-sav;
+  @include font(20, 24);
+  @include not-hover;
+
+  &:hover,
+  &:focus {
+    @include hover;
+    background-color: #c94f45;
+    color: $color-default-white;
+  }
+}

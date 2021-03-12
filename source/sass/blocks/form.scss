@@ -1,0 +1,79 @@
+.form {
+  width: 100%;
+
+  button {
+    //flex-grow: 1;
+    display: inline-block;
+
+    padding: 25px 68px;
+    min-width: 77px;
+
+    @include font(20, 24);
+    @include not-hover;
+
+    text-align: center;
+    //text-transform: uppercase;
+    color: $color-cab-sav;
+    background-color: $color-oriental-pink;
+
+    border: none;
+    cursor: pointer;
+
+    @include not-hover;
+
+    &:hover,
+    &:focus {
+      @include hover;
+      background-color: #c94f45;
+      color: $color-default-white;
+    }
+  }
+}
+
+.form__item {
+  width: 100%;
+  padding-bottom: 27px;
+}
+
+.form__item input[type="text"] {
+  margin-bottom: 4px;
+}
+
+.form__item input[type="tel"] {
+  margin-bottom: 6px;
+}
+
+.form__item input[type="text"],
+.form__item input[type="tel"] {
+  width: 100%;
+  padding-top: 3px;
+  padding-bottom: 12px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #f6ede9;
+  color: #f6ede9;
+
+  -webkit-appearance: none;
+
+  &::-webkit-input-placeholder {
+    color: white;
+  }
+
+  &::-moz-placeholder {
+    color: white;
+  }
+
+  &:-ms-input-placeholder {
+    color: white;
+  }
+
+  &:hover {
+    border-color: rgba(white, 0.5);
+    outline: none;
+  }
+
+  &:focus {
+    border-color: white;
+    outline: none;
+  }
+}

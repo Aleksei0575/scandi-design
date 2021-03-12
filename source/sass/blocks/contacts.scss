@@ -1,0 +1,32 @@
+.contacts {
+  background-color: $color-bazaar;
+}
+
+.contacts__wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__form-block {
+  width: 49.3%;
+  padding: 50px 0 184px 82px;
+}
+
+.contacts__title {
+  margin-bottom: 22px;
+  @include font (40, 50);
+  font-weight: 400;
+
+  color: $color-default-white;
+  text-transform: uppercase;
+}
+
+.contacts__info {
+  margin: 0 0 44px;
+  color: $color-default-white;
+}
+
+.contacts__map{
+  width: 52.7%;
+}
+
