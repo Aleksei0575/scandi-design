@@ -18,6 +18,18 @@
   }
 }
 
+.footer__contact-link {
+  color: $color-cab-sav;
+  @include not-hover;
+
+  &:hover,
+  &:focus {
+    @include hover;
+    color: #ae127b;
+    text-decoration: underline;
+  }
+}
+
 .footer__copyright {
   width: 13.9%;
 

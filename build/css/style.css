@@ -1238,9 +1238,10 @@ h3 {
     outline: none;
     cursor: pointer;
     -webkit-transition: 0.3s ease;
-    transition: 0.3s ease; }
+    transition: 0.3s ease;
+    color: #ae127b; }
     .our-works__link-gallery:hover svg {
-      fill: #e0fee8; }
+      fill: #ae127b; }
 
 .team {
   padding-top: 50px;
@@ -1416,7 +1417,7 @@ h3 {
     transition: 0.3s ease;
     background-color: #c94f45; }
     .reviews__btn:hover svg {
-      fill: #ae127b; }
+      fill: #e0ffe8; }
 
 .contacts {
   background-color: #8d7370; }
@@ -1535,6 +1536,19 @@ h3 {
           justify-content: space-between; }
   .footer__contact p {
     margin: 0; }
+
+.footer__contact-link {
+  color: #533738; }
+  .footer__contact-link:not(:hover) {
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease; }
+  .footer__contact-link:hover, .footer__contact-link:focus {
+    outline: none;
+    cursor: pointer;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    color: #ae127b;
+    text-decoration: underline; }
 
 .footer__copyright {
   width: 13.9%; }
