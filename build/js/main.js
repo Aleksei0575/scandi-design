@@ -1,6 +1,29 @@
 'use strict';
 
 // ПЕРЕИСПОЛЬЗУЕМЫЕ ФУНКЦИИ
+(function () {
+  const navBtn = document.querySelector('.header__navigation-open');
+  const nav = document.querySelector('.header__navigation');
+  const content = document.body;
+
+  if (navBtn && nav) {
+    navBtn.addEventListener('click', openNav);
+  }
+
+  function openNav(evt) {
+    evt.preventDefault();
+    evt.stopPropagation();
+
+    if (navBtn.classList.contains('header__navigation-close')) {
+      navBtn.classList.remove('header__navigation-close');
+      content.classList.remove('fixed');
+    } else {
+      navBtn.classList.add('header__navigation-close');
+      content.classList.add('fixed');
+    }
+  }
+})();
+
 // СЛАЙДЕР
 // (function () {
 //

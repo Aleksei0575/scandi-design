@@ -1,6 +1,11 @@
 .our-works {
   padding-top: 65px;
   padding-bottom: 65px;
+
+  @include viewport--sm {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
 }
 
 .our-works__title {
@@ -8,6 +13,10 @@
   @include font (40, 50);
   font-weight: 400;
   text-transform: uppercase;
+
+  @include viewport--sm {
+    @include font (35, 42);
+  }
 }
 
 .our-works__list {
@@ -15,6 +24,10 @@
   justify-content: space-between;
   flex-wrap: wrap;
   margin-bottom: 10px;
+
+  @include viewport--sm {
+    flex-direction: column;
+  }
 }
 
 .our-works__item {
@@ -35,6 +48,41 @@
   &:hover .our-works__hover-block {
     display: block;
   }
+
+  &--small {
+    @media (max-width: 1280px) and (min-width: 1024px) {
+      width: calc(100% / 2 - 109px);
+    }
+
+    @include viewport--md {
+      width: 40%;
+    }
+
+    @media (max-width: 767px) and (min-width: 501px) {
+      width: 72%;
+      margin: 0 auto 30px;
+    }
+
+    @media (max-width: 500px) and (min-width: 280px) {
+      width: 100%;
+    }
+  }
+
+  &--big {
+    @media (max-width: 1280px) and (min-width: 1024px) {
+      width: calc(100% / 2 - -90px);
+    }
+
+    @include viewport--md {
+      width: 57%;
+    }
+
+    @include viewport--sm {
+      width: 100%;
+    }
+  }
+
+
 }
 
 .our-works__hover-block {
@@ -58,6 +106,44 @@
   p {
     text-align: left;
   }
+
+  @media (max-width: 1140px) and (min-width: 1024px) {
+    padding: 30px 35px 122px;
+  }
+
+  @include viewport--md {
+    padding: 20px;
+
+    h3 {
+      @include font(25, 32);
+
+      @media (max-width: 900px) and (min-width: 768px) {
+        width: 100%;
+        @include font(18, 25);
+      }
+    }
+
+    p {
+      @media (max-width: 949px) and (min-width: 768px) {
+        @include font(14, 21);
+      }
+    }
+  }
+
+  @include viewport--sm {
+    h3 {
+      @media (max-width: 501px) and (min-width: 290px) {
+        width: 100%;
+        @include font(18, 25);
+      }
+    }
+
+    p {
+      @media (max-width: 501px) and (min-width: 290px) {
+        @include font(14, 21);
+      }
+    }
+  }
 }
 
 .our-works__link-gallery {
@@ -76,6 +162,10 @@
 
   svg {
     fill: $color-cab-sav;
+
+    @include viewport--sm {
+      width: 40px;
+    }
   }
 
   &:hover {
@@ -85,6 +175,10 @@
     svg {
       fill: #ae127b;
     }
+  }
+
+  @include viewport--sm {
+    @include font(20, 27);
   }
 }
 

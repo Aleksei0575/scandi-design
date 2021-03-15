@@ -11,12 +11,21 @@
 
   text-align: center;
   text-transform: uppercase;
+
+  @include viewport--sm {
+    @include font (35, 42);
+    margin-bottom: 20px;
+  }
 }
 
 .how-work__list {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  @include viewport--sm {
+    flex-direction: column;
+  }
 }
 
 .how-work__item {
@@ -42,5 +51,14 @@
 
   p {
     margin: 0;
+  }
+
+  @include viewport--md {
+    width: 25%;
+  }
+
+  @include viewport--sm {
+    width: 100%;
+    margin-bottom: 35px;
   }
 }
