@@ -5,11 +5,24 @@
 .contacts__wrapper{
   display: flex;
   justify-content: space-between;
+
+  @include viewport--sm {
+    flex-direction: column;
+  }
 }
 
 .contacts__form-block {
   width: 49.3%;
   padding: 50px 0 184px 82px;
+
+  @include viewport--md {
+    padding: 50px 0 60px 0;
+  }
+
+  @include viewport--sm {
+    width: 100%;
+    padding: 35px 0 35px 0;
+  }
 }
 
 .contacts__title {
@@ -19,6 +32,11 @@
 
   color: $color-default-white;
   text-transform: uppercase;
+
+  @include viewport--sm {
+    @include font (35, 42);
+    margin-bottom: 20px;
+  }
 }
 
 .contacts__info {
@@ -26,7 +44,26 @@
   color: $color-default-white;
 }
 
-.contacts__map{
-  width: 52.7%;
+.contacts__map-block {
+  width: 49.2%;
+  position: relative;
+
+  iframe {
+    @include pseudo-elem();
+    width: 100%;
+    min-height: 100%;
+    top: 0;
+    z-index: 2;
+
+    border: none;
+
+    @include viewport--md {
+      max-height: 100%;
+    }
+  }
+
+  @include viewport--sm {
+    width: 100%;
+  }
 }
 

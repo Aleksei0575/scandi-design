@@ -1,5 +1,9 @@
 .about-us {
   padding-top: 65px;
+
+  @include viewport--sm {
+    padding-top: 35px;
+  }
 }
 
 .about-us__title {
@@ -9,6 +13,11 @@
   color: $color-cab-sav;
   text-transform: uppercase;
   text-align: center;
+
+  @include viewport--sm {
+    @include font (35, 42);
+    margin-bottom: 20px;
+  }
 }
 
 .about-us__top-wrapper {
@@ -16,10 +25,35 @@
   margin-bottom: 21px;
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 1196px) and (min-width: 1024px) {
+    padding: 0 100px;
+  }
+
+  @include viewport--md {
+    padding: 0 30px;
+  }
+
+  @include viewport--sm {
+    flex-direction: column;
+  }
 }
 
 .about-us__image-block {
   width: 43%;
+
+  @include viewport--md {
+    width: 48%;
+  }
+
+  @include viewport--sm {
+    width: 100%;
+    margin-bottom: 10px;
+
+    img {
+      margin: auto;
+    }
+  }
 }
 
 .about-us__info-block {
@@ -33,6 +67,19 @@
   p:last-child  {
     margin: 0;
   }
+
+  @include viewport--md {
+    width: 48%;
+  }
+
+  @media (max-width: 860px) and (min-width: 768px) {
+    font-size: 14px;
+  }
+
+  @include viewport--sm {
+    width: 100%;
+    @include font (14, 21);
+  }
 }
 
 .about-us__bottom-wrapper {
@@ -43,6 +90,14 @@
   display: flex;
   justify-content: space-between;
   padding: 0 182px;
+
+  @include viewport--md {
+    padding: 0 30px;
+  }
+
+  @include viewport--sm {
+    flex-direction: column;
+  }
 }
 
 .about-us__advantages-item {

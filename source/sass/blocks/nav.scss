@@ -4,24 +4,54 @@
 
 .nav__item-company {
   width: 12.8%;
+
+  @media (max-width: 1390px) and (min-width: 1024px) {
+    width: fit-content;
+  }
 }
 
 .nav__item-portfolio {
   width: 13.7%;
+
+  @media (max-width: 1390px) and (min-width: 1024px) {
+    width: fit-content;
+  }
 }
 
 .nav__item-team {
   width: 8.9%;
+
+  @media (max-width: 1390px) and (min-width: 1024px) {
+    width: fit-content;
+  }
 }
 
 .nav__item-work {
   width: 17.3%;
+
+  @media (max-width: 1390px) and (min-width: 1024px) {
+    width: fit-content;
+  }
 }
 
 .nav__item-reviews {
   width: 17.7%;
+
+  @media (max-width: 1390px) and (min-width: 1024px) {
+    width: fit-content;
+  }
 }
 
 .nav__item-application {
   width: 16.5%;
+
+  @media (max-width: 1390px) and (min-width: 1024px) {
+    width: fit-content;
+  }
+}
+
+@include viewport--md {
+  .nav__item {
+    width: 100%;
+  }
 }

@@ -4,9 +4,9 @@
   margin: 0 auto;
   padding: 0 100px;
 
-  //@include viewport--lg {
-  //  padding: 0 25px;
-  //}
+  @media (max-width: 1390px) and (min-width: 1024px) {
+    padding: 0 50px;
+  }
 
   @include viewport--md {
     padding: 0 30px;

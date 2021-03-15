@@ -13,11 +13,28 @@
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/promo-bg@2x.jpg");
   }
+
+  @include viewport--md {
+    margin-top: -102px;
+  }
+
+  @include viewport--sm {
+    padding-top: 95px;
+    min-height: 635px;
+
+    @media (max-width: 650px) and (min-width: 280px) {
+      min-height: 410px;
+    }
+  }
 }
 
 .promo__info {
   padding-left: 84px;
   padding-top: 2px;
+
+  @include viewport--sm {
+    padding-left: 0;
+  }
 }
 
 .promo__title {
@@ -26,6 +43,14 @@
   @include font (50, 62);
   font-weight: 400;
   color: $color-cab-sav;
+
+  @include viewport--sm {
+    @include font (35, 42);
+
+    @media (max-width: 650px) and (min-width: 280px) {
+      width: 100%;
+    }
+  }
 }
 
 .promo__text {
@@ -33,6 +58,11 @@
   margin: 0;
   margin-bottom: 25px;
   color: $color-cab-sav;
+
+  @include viewport--sm {
+    @include font (14, 21);
+    width: 100%;
+  }
  }
 
 .promo__link-btn {
@@ -51,5 +81,9 @@
     @include hover;
     background-color: #c94f45;
     color: $color-default-white;
+  }
+
+  @include viewport--sm {
+    padding: 15px 65px;
   }
 }
